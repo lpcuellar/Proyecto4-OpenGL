@@ -68,10 +68,11 @@ def reanult():
     pygame.mixer.music.set_volume(0.5)
 
 pygame.mouse.set_pos(480, 270)
-
 isPlaying = True
+onMouse = False
 
 formula1()
+
 while isPlaying:
     mx, my = pygame.mouse.get_pos()
     keys = pygame.key.get_pressed()
@@ -148,6 +149,12 @@ while isPlaying:
         reanult()
         renderer.model_lists.append(Renault('models/renault.obj', 'textures/renault.bmp'))
 
+    if keys[pygame.K_y]:
+        onMouse = True
+    
+    if keys[pygame.K_n]:
+        onMouse = False
+
 
     for ev in pygame.event.get():
         if ev.type == pygame.QUIT:
@@ -160,8 +167,9 @@ while isPlaying:
             elif ev.key == pygame.K_ESCAPE:
                 isPlaying = False
     
-    # renderer.camera_rotation.y = mx * 0.4
-    # renderer.camera_rotation.x = my * 0.4
+    while onMouse:
+        renderer.camera_rotation.y = mx * 0.4
+        renderer.camera_rotation.x = my * 0.4
 
     renderer.render()
 

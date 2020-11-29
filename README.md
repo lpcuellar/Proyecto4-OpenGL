@@ -28,6 +28,9 @@
    * o --> cambiar a modo relleno
    * p --> cambiar a modo wireframe
 
+* Input Mouse:
+    * y --> activar mouse input
+    * n --> desactivar mouse input
 
 
 ## Descripción:
