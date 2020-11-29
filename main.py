@@ -167,7 +167,7 @@ while isPlaying:
             elif ev.key == pygame.K_ESCAPE:
                 isPlaying = False
     
-    while onMouse:
+    if onMouse == True:
         renderer.camera_rotation.y = mx * 0.4
         renderer.camera_rotation.x = my * 0.4
 
