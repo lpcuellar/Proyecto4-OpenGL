@@ -2,12 +2,15 @@
 
 ## Controles:
 
+Traslación de cámara:
 * a --> mover la cámara para la izquierda
 * d --> mover la cámara para la derecha
 * s --> mover la cámara para la atrás
 * w --> mover la cámara para la adelante
 * KEY UP --> mover la cámara hacia arriba
 * KEY DOW --> mover la cámara hacia abajo
+
+Rotación de cámara:
 * q --> aumenta roll de cámara
 * e --> disminuye roll de cámara
 * r --> aumenta pitch de cámara
@@ -15,11 +18,13 @@
 * x --> aumenta yaw de cámara
 * z --> disminuye yaw de cámara
 
+Cambio de modelos:
 * 1 --> cambiar a carro F1 Ferrari
 * 2 --> cambiar a Top Gun
 * 3 --> cambiar a calabaza de halloween
 * 4 --> cambiar a carro de F1 Lotus
 
+Tipo de render:
 * o --> cambiar a modo relleno
 * p --> cambiar a modo wireframe
 
